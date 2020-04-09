@@ -47,6 +47,7 @@ object ProjectPlugin extends AutoPlugin {
       micrositeAuthor := "Microsites contributors",
       micrositeCompilingDocsTool := WithMdoc,
       micrositePushSiteWith := GitHub4s,
+      micrositeGithubToken := sys.env.get("GITHUB_TOKEN"),
       micrositeOrganizationHomepage := "https://github.com/47degrees/microsites/blob/master/AUTHORS.md",
       micrositePalette := Map(
         "brand-primary"   -> "#3D3832",
