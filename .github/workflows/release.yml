@@ -43,6 +43,13 @@ jobs:
           path: ~/.sbt
           key: ${{ runner.os }}-sbt-${{ hashFiles('build.sbt') }}-${{ hashFiles('project/*.scala') }}
           restore-keys: ${{ runner.os }}-sbt-
+      - name: Set up Ruby 2.6
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+      - name: Set up jekyll
+        run: |
+          gem install jekyll -v 4
       - name: Release new version
         if: env.SONATYPE_USERNAME != null
         run: sbt ci-release
