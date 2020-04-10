@@ -40,7 +40,7 @@ object ProjectPlugin extends AutoPlugin {
     lazy val micrositeSettings = Seq(
       micrositeName := "Microsites",
       micrositeDescription := "Github API wrapper written in Scala",
-      micrositeBaseUrl := "microsites",
+      micrositeBaseUrl := "microsites-tests",
       micrositeDocumentationUrl := "docs",
       micrositeGithubOwner := "47degrees",
       micrositeGithubRepo := "microsites",
