@@ -43,7 +43,7 @@ object ProjectPlugin extends AutoPlugin {
       micrositeBaseUrl := "microsites-tests",
       micrositeDocumentationUrl := "docs",
       micrositeGithubOwner := "47degrees",
-      micrositeGithubRepo := "microsites",
+      micrositeGithubRepo := "microsites-test",
       micrositeAuthor := "Microsites contributors",
       micrositeCompilingDocsTool := WithMdoc,
       micrositePushSiteWith := GitHub4s,
